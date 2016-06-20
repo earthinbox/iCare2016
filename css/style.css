@@ -909,6 +909,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 5px; }
 .brief .video-container {
   position: relative;
+<<<<<<< HEAD
   padding-bottom: 50%;
   padding-top: 30px;
   height: 0;
@@ -921,16 +922,33 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   width: 100%;
   height: 100%; }
+=======
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden; }
+  .brief .video-container embed,
+  .brief .video-container object,
+  .brief .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+>>>>>>> origin/master
 .brief .video-thumbnail {
   cursor: pointer; }
   .brief .video-thumbnail p {
     color: white; }
 
+<<<<<<< HEAD
 .prize .row {
   margin-bottom: 10px; }
   .prize .row img {
     width: 100%; }
 
+=======
+>>>>>>> origin/master
 .about-us p {
   font-size: 16px;
   text-indent: 70px; }
@@ -942,11 +960,10 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 25px;
   padding: 20px 0px; }
   .previous-award .fh5co-text {
-    border: 2px solid white;
     position: absolute;
-    top: 25%;
-    left: 25%;
-    right: 10%;
+    top: 10%;
+    left: 15%;
+    right: 0;
     padding: 20px;
     text-indent: 70px; }
     .previous-award .fh5co-text h2 {
@@ -954,17 +971,20 @@ h1, h2, h3, h4, h5, h6 {
       font-weight: bold;
       font-size: 20px;
       text-indent: 0px; }
+    @media screen and (max-width: 768px) {
+      .previous-award .fh5co-text {
+        position: relative; } }
   .previous-award .left {
     text-align: right; }
     .previous-award .left .image {
       float: right; }
     .previous-award .left .fh5co-text {
-      right: 25%;
-      left: 10%; }
+      right: 15%;
+      left: 0; }
   .previous-award .image {
     position: relative;
-    width: 300px;
-    height: 400px; }
+    width: 150px;
+    height: 200px; }
   .previous-award .image:before {
     content: '\A';
     position: absolute;

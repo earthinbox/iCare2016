@@ -1107,22 +1107,20 @@ h1, h2, h3, h4, h5, h6 {
 		margin-bottom: 5px;
 	}
 	.video-container {
-		position:relative;
-		padding-bottom:50%;
-		padding-top:30px;
-		height:0;
-		overflow:hidden;
-	}
-	.video-container {
-		embed,
+		position: relative;
+	    padding-bottom: 56.25%;
+	    padding-top: 30px; 
+	    height: 0; 
+	    overflow: hidden;
+	    embed,
 		object,
-		iframe{
-			position:absolute;
-			top:0;
-			left:0;
-			width:100%;
-			height:100%;
-		}
+		iframe {
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+		    height: 100%;
+	    }
 	}
 	.video-thumbnail{
 		cursor: pointer;
@@ -1155,11 +1153,10 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 25px;
 	padding: 20px 0px;
 	.fh5co-text{
-		border: 2px solid white;
 		position: absolute;
-		top: 25%;
-		left: 25%;
-		right: 10%;
+		top: 10%;
+		left: 15%;
+		right: 0;
 		padding: 20px;
 		text-indent: 70px;
 		h2{
@@ -1168,6 +1165,9 @@ h1, h2, h3, h4, h5, h6 {
 			font-size: 20px;
 			text-indent: 0px;
 		}
+		@media screen and (max-width: $screen-sm) {
+			position: relative;
+		}
 	}
 	.left{
 		text-align: right;
@@ -1175,14 +1175,14 @@ h1, h2, h3, h4, h5, h6 {
 			float: right;
 		}
 		.fh5co-text{
-			right: 25%;
-			left: 10%;
+			right: 15%;
+			left: 0;
 		}
 	}
 	.image{
 		position: relative;
-	    width: 300px;
-	    height: 400px;
+	    width: 150px;
+	    height: 200px;
 	}
 	.image:before {
 	    content: '\A';
