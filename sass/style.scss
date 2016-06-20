@@ -1094,6 +1094,44 @@ h1, h2, h3, h4, h5, h6 {
 	-webkit-text-fill-color: transparent;
 }
 
+.brief{
+	p{
+		margin-bottom: 0;
+	}
+	.row{
+		margin-bottom: 10px;
+	}
+	.content-head{
+		font-size: 20px;
+		font-weight: bold;
+		margin-bottom: 5px;
+	}
+	.video-container {
+		position:relative;
+		padding-bottom:50%;
+		padding-top:30px;
+		height:0;
+		overflow:hidden;
+	}
+	.video-container {
+		embed,
+		object,
+		iframe{
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+		}
+	}
+	.video-thumbnail{
+		cursor: pointer;
+		p{
+			color: white;
+		}
+	}
+}
+
 .about-us{
 	p{
 		font-size: 16px;
@@ -1153,6 +1191,14 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
+@media screen and (max-width: 768px) {
+	.brief{
+		.video-detail {
+			padding: 10px 15px;
+		}
+	}
+}
+
 @media screen and (max-width: 720px) {
 	.previous-award{
 		padding: 15px;
@@ -1164,6 +1210,16 @@ h1, h2, h3, h4, h5, h6 {
 			.fh5co-text{
 				right: 33%;
 				left: 3%;
+			}
+		}
+	}
+	.brief{
+		.content-head{
+			font-size: 18px;
+		}
+		.video-detail{
+			p{
+				font-size: 16px;
 			}
 		}
 	}

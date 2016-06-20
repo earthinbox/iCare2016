@@ -194,18 +194,39 @@ $(document).ready(function() {
 		center: true,
 	    loop:true,
 	    margin:10,
-	    item:5,
+	    item:3,
 	    responsive:{
 	        0:{
-	            items:1
+	            items:2
+	        },
+	        400:{
+	        	items:2
 	        },
 	        600:{
-	            items:2
+	            items:3
 	        },
 	        1000:{
 	            items:3
 	        }
 	    }
 	})
+
+	$('.video-thumbnail').click(function(){
+		url = $(this).attr('data-detail');
+		head = $(this).find('p').text();
+		$("#displayVideo").attr('src',url.replace("watch?v=", "v/"));
+		$('.video-detail .content-head').text(head);
+
+		id = $(this).attr('data-id');
+		if(id == 1){
+			detail = "สิ่งที่เราทํามันส่งผลกระทบต่อสังคมทุกๆอย่าง ง่ายๆเลยถ้าเราเองไม่เป็นปัญหาของสังคม สังคมก็ หมดปัญหา ถ้าเราสามารถมีส่วนทําให้เรื่องใดเรื่องหนึ่งเป็นประโยชน์ได้ สังคมก็จะเจริญขึ้นไปอีก" ;
+		}else if(id == 2){
+			detail = "ฟัง 6 มุมมองที่น่าสนใจสุดๆ “ครีเอทีฟอาสา” คืออะไร โดย เป้ อารักษ์ อมรศุภศิริ, กรณ์ เทพินทราภิรักษ์ ชลณัฏฐ์ โกยกุล, พันโทวันชนะ สวัสดี, พงศธร จงวิลาส และ ทรงกลด บางยี่ขัน";
+		}else if(id == 3){
+			detail = "จิตอาสา คือ หน้าที่ พันโทวันชนะ สวัสดี นายทหาร / จิตอาสา / นักแสดง";
+		}
+		$('.video-detail').find('p').not('.content-head').text(detail);
+		
+	});
 	
 });
